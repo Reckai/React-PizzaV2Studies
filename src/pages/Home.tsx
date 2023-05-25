@@ -3,7 +3,7 @@ import { useSelector } from 'react-redux';
 import { setCategoryId, setPageCount,  selectSort} from '../redux/slices/filterSlice'
 
 import Sort from '../components/Sort'
-  import Categores from '../components/Categores'
+import Categores from '../components/Categores'
 import Pizza_block from '../components/PizzaBlock';
 import Skeleton from '../components/PizzaBlock/Skeleton'
 import Pagination from '../components/Pagination'
@@ -76,13 +76,14 @@ const Home: React.FC = () => {
     //     categoryId,
     //     pageCount,
     //   });
-      
+
     //   console.log(isMounted.current);
-      
+
     //   navigate(`/?${queryString}`);
     // }
-   
+
     // isMounted.current = true;
+    getPizza();
   }, [categoryId, sort.sortProperties, pageCount]);
 // Если был первый рендер, то проверяем URl-параметры и сохраняем в редуксе
   // React.useEffect(() => {

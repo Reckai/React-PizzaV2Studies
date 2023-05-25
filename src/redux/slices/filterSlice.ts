@@ -33,7 +33,7 @@ const initialState: FilterSliceState = {
   pageCount: 1,
 }
 
-export const filterSlice = createSlice({
+export const filterSlice     = createSlice({
   name: 'filter',
   initialState,
   reducers: {
